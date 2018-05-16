@@ -1,0 +1,11 @@
+<label>LIST[<%=@fbs.count%>]</label>
+<%if @fbs%>
+<ol>
+	<%@fbs.each do |fb|%>
+		<li>
+			<a href="/feedback/<%="#{fb.id}"%>/detail">&nbsp;&nbsp;&nbsp;<%=fb.telephone%></a>
+		</li>
+	<%end%>
+</ol>
+<%end%>
+
